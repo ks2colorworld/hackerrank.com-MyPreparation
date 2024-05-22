@@ -28,7 +28,31 @@ function readLine() {
 
 function plusMinus(arr) {
   // Write your code here
+  const totalNum = arr.length;
+  let plusNum = 0;
+  let minusNum = 0;
+  let zeroNum = 0;
+  for (const num of arr) {
+    if (0 < num) {
+      plusNum++;
+      continue;
+    }
+    if (num < 0) {
+      minusNum++;
+      continue;
+    }
+    if (num === 0) {
+      zeroNum++;
+      continue;
+    }
+  }
+  console.log(convert6Digits(plusNum / totalNum));
+  console.log(convert6Digits(minusNum / totalNum));
+  console.log(convert6Digits(zeroNum / totalNum));
+}
 
+function convert6Digits(num) {
+  return num.toFixed(6);
 }
 
 function main() {
