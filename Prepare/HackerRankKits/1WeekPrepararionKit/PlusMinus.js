@@ -21,6 +21,8 @@ function readLine() {
 }
 
 /*
+online : https://www.hackerrank.com/challenges/one-week-preparation-kit-plus-minus/problem?isFullScreen=true
+solved : https://github.com/ks2colorworld/hackerrank.com-MyPreparation/commit/92c95d717a976449195c57bc8f77a50af439a79b
  * Complete the 'plusMinus' function below.
  *
  * The function accepts INTEGER_ARRAY arr as parameter.
