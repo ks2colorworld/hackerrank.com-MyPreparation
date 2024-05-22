@@ -31,7 +31,15 @@ function readLine() {
 
 function timeConversion(s) {
   // Write your code here
-
+  const [time, AMPM] = s.split(/(AM|PM)/)
+  let [hh, mm, ss] = time.split(':')
+  if (hh == '12') {
+    hh = '00'
+  }
+  if (AMPM == 'PM') {
+    hh = parseInt(hh, 10) + 12;
+  }
+  return `${hh}:${mm}:${ss}`;
 }
 
 function main() {
