@@ -28,7 +28,24 @@ function readLine() {
 
 function miniMaxSum(arr) {
   // Write your code here
-
+  let minSum = 0;
+  let maxSum = 0;
+  for (let i = 0; i < 5; i++) {
+    let sum = 0;
+    for (const j in arr) { //(let j = 0; j < arr.length; j++){
+      if (j == i) {
+        continue;
+      }
+      sum += arr[j];
+    }
+    if (minSum === 0 || sum < minSum) {
+      minSum = sum;
+    }
+    if (maxSum === 0 || maxSum < sum) {
+      maxSum = sum;
+    }
+  }
+  console.log(`${minSum} ${maxSum}`);
 }
 
 function main() {
