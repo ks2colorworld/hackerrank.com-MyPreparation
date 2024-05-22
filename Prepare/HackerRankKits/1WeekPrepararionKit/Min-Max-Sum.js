@@ -21,6 +21,8 @@ function readLine() {
 }
 
 /*
+online : https://www.hackerrank.com/challenges/one-week-preparation-kit-mini-max-sum/problem?isFullScreen=true
+solved : https://github.com/ks2colorworld/hackerrank.com-MyPreparation/commit/3b6d6baefa139aa173d62676e5fc1c552653a4d0#diff-daa57525f41f42709d63210f2a8874f4294a987eff6ce846a579e5ca4050a84c
  * Complete the 'miniMaxSum' function below.
  *
  * The function accepts INTEGER_ARRAY arr as parameter.
