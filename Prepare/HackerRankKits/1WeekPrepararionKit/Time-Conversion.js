@@ -23,6 +23,8 @@ function readLine() {
 }
 
 /*
+online : https://www.hackerrank.com/challenges/one-week-preparation-kit-time-conversion/problem?isFullScreen=true
+solved : https://github.com/ks2colorworld/hackerrank.com-MyPreparation/commit/676bbd09933f4e08ff53ac49473f7fdd182ede2c
  * Complete the 'timeConversion' function below.
  *
  * The function is expected to return a STRING.
