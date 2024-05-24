@@ -31,7 +31,16 @@ online : https://www.hackerrank.com/challenges/s10-weighted-mean/problem?isFullS
 
 function weightedMean(X, W) {
   // Write your code here
-
+  let vals = 0, weights = 0;
+  for (const i of W) {
+    weights += i;
+  }
+  for (let i = 0; i < X.length; i++) {
+    const val = X[i];
+    const weight = W[i];
+    vals += (val * weight);
+  }
+  console.log((vals/weights).toFixed(1));
 }
 
 function main() {
@@ -43,3 +52,12 @@ function main() {
 
   weightedMean(vals, weights);
 }
+
+/* 
+note : 
+테스트 실행 명령어 : node Day0-WeightedMean.js < Day0-input-WeightedMean.txt  
+.toFixed(1) : 소숫점으로 표현되는 데이터 형식의 소숫점 표시 갯수(1개)를 제한하는 문법 
+
+for of : 데이터 구조내 반복문 동작시 value를 다룰 때
+for in : 데이터 구조에서의 key를 다룰 때
+ */
