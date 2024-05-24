@@ -21,6 +21,7 @@ function readLine() {
 }
 
 /*
+online : https://www.hackerrank.com/challenges/s10-weighted-mean/problem?isFullScreen=true
  * Complete the 'weightedMean' function below.
  *
  * The function accepts following parameters:
