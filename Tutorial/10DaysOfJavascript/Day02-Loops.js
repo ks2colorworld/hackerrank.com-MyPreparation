@@ -28,6 +28,19 @@ function readLine() {
  */
 function vowelsAndConsonants(s) {
   // online : https://www.hackerrank.com/challenges/js10-loops/problem?isFullScreen=true
+  let consonant = '';
+  const vowels = ['a', 'e', 'i', 'o', 'u']
+  for (const t of s) {
+    if (vowels.includes(t)) {
+      console.log(t)
+      continue
+    }
+    consonant = consonant + t;
+    // console.log(t)
+  }
+  for (const t of consonant) {
+    console.log(t);
+  }
 }
 
 
