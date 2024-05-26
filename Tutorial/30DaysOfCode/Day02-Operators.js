@@ -32,7 +32,13 @@ function readLine() {
 function solve(meal_cost, tip_percent, tax_percent) {
   // online : https://www.hackerrank.com/challenges/30-operators/problem?isFullScreen=true
   // Write your code here
-
+  const tip = meal_cost * tip_percent / 100;
+  // console.log(tip);
+  const tax = meal_cost * tax_percent/100;
+  // console.log(tax);
+  const total = meal_cost + tip + tax;
+  // console.log(total);
+  console.log(Math.round(total));
 }
 
 function main() {
