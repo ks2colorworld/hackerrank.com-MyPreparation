@@ -30,6 +30,7 @@ function readLine() {
  */
 
 function solve(meal_cost, tip_percent, tax_percent) {
+  // online : https://www.hackerrank.com/challenges/30-operators/problem?isFullScreen=true
   // Write your code here
 
 }
