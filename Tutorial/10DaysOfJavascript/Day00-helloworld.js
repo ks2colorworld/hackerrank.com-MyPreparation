@@ -35,6 +35,7 @@ function greeting(parameterVariable) {
 
   // Write a line of code that prints parameterVariable to stdout using console.log:
   // online : https://www.hackerrank.com/challenges/js10-hello-world/problem?isFullScreen=true
+  console.log(parameterVariable);
   
 }
 
