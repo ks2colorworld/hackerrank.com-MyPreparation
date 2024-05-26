@@ -39,7 +39,7 @@ function Person(initialAge) {
       console.log('You are a teenager.');
       // msg = 'You are a teenager.';
     } else {
-      console.log('You are a old.'); 
+      console.log('You are old.'); // 오타 : You are a old. 
       // msg = 'You are old.'; 
     }
     // endWirte(msg, isFirstCheckOld, isEndLine)
@@ -58,7 +58,14 @@ function Person(initialAge) {
 //   if (isFirstCheckOld || !isEndLine) {
 //     console.log(msg)
 //   } else if (!isFirstCheckOld && isEndLine) {
-//     process.stdout.write(`${msg}\r`)
+//     process.stdout.write(`${msg}\r`) 
+/* 
+      `\r` : (캐리지 리턴)을 사용하여 줄바꿈 없이 출력을 덮어쓸 수 있습니다. 마지막 빈줄 출력 없애기 - 필요없음  
+      The extra line at the end of the output is supposed to be there and is trimmed before being compared against the test case's expected output. 
+      If you're failing this challenge, check your logic and review your print statements for spelling errors.
+      출력 끝의 추가 줄은 거기에 있어야 하며 테스트 사례의 예상 출력과 비교되기 전에 잘립니다. 
+      이 챌린지에 실패하면 논리를 확인하고 인쇄 문에 철자 오류가 있는지 검토하세요.
+*/     
 //   }
 // }
 
