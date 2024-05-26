@@ -20,6 +20,7 @@ function readLine() {
 
 function Person(initialAge) {
   // Add some more code to run some checks on initialAge
+  // online: https://www.hackerrank.com/challenges/30-class-vs-instance/problem?isFullScreen=true
   this.amIOld = function () {
     // Do some computations in here and print out the correct statement to the console
 
