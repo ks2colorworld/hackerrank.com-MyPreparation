@@ -24,6 +24,7 @@ function readLine() {
 
 function main() {
   // Write your code here. Read input using 'readLine()' and print output using 'console.log()'.
+  // online : https://www.hackerrank.com/challenges/js10-let-and-const/problem?isFullScreen=true
 
   // Print the area of the circle:
 
