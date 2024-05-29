@@ -27,5 +27,14 @@ function main() {
 
   const arr = readLine().replace(/\s+$/g, '').split(' ').map(arrTemp => parseInt(arrTemp, 10));
   // online : https://www.hackerrank.com/challenges/30-arrays/problem?isFullScreen=true
-  
+  // console.log(arr);
+  arr.reverse();
+  // console.log(arr);
+  let outputText = '';
+  arr.map(v => { outputText += v + ' '; });
+  console.log(outputText.replace(/\s+$/g,'')); 
 }
+
+/* 
+node Day07-Arrays.js < Day07-Arrays-input.txt
+ */
