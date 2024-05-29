@@ -34,7 +34,7 @@ function getArea(length, width) {
   let area;
   // Write your code here
   // online : https://www.hackerrank.com/challenges/js10-arithmetic-operators/problem?isFullScreen=true
-
+  area = length * width;
   return area;
 }
 
@@ -50,7 +50,7 @@ function getPerimeter(length, width) {
   let perimeter;
   // Write your code here
   // online : https://www.hackerrank.com/challenges/js10-arithmetic-operators/problem?isFullScreen=true
-
+  perimeter = 2 * (length + width);
   return perimeter;
 }
 
