@@ -33,6 +33,7 @@ function readLine() {
 function getArea(length, width) {
   let area;
   // Write your code here
+  // online : https://www.hackerrank.com/challenges/js10-arithmetic-operators/problem?isFullScreen=true
 
   return area;
 }
@@ -48,6 +49,7 @@ function getArea(length, width) {
 function getPerimeter(length, width) {
   let perimeter;
   // Write your code here
+  // online : https://www.hackerrank.com/challenges/js10-arithmetic-operators/problem?isFullScreen=true
 
   return perimeter;
 }
