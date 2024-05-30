@@ -30,7 +30,14 @@ function readLine() {
  */
 function isPositive(a) {
   // online : https://www.hackerrank.com/challenges/js10-throw/problem?isFullScreen=true
-  
+  // console.log(a);
+  if (0 < a) {
+    return 'YES'
+  } else if (a < 0) {
+    throw new Error('Negative Error');
+  } else {
+    throw new Error('Zero Error');
+  }
 }
 
 
