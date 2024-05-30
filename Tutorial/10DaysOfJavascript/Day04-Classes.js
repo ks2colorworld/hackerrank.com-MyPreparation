@@ -12,3 +12,31 @@ const pentagon = new Polygon([10, 20, 30, 40, 43]);
 console.log(rectangle.perimeter());
 console.log(square.perimeter());
 console.log(pentagon.perimeter());
+
+class Polygon {
+  constructor(a) {
+    this.p = a;
+    this.perimeter = function () {
+      let per = 0;
+      for (const i of this.p) {
+        // console.log(i);
+        per += i;
+      }
+      return per;
+    };
+  }
+}
+
+/* 
+function Polygon(a) {
+  this.p = a;
+  this.perimeter = function() {
+    let per = 0;
+    for (const i of this.p) {
+      // console.log(i);
+      per += i;
+    }
+    return per;
+  }
+}
+ */
