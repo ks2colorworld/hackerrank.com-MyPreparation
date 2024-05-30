@@ -30,7 +30,14 @@ function readLine() {
  */
 function getCount(objects) {
   // online : https://www.hackerrank.com/challenges/js10-count-objects/problem?isFullScreen=true
-  
+  let count = 0;
+  for (const i of objects) {
+    // console.log(i);
+    if (i.x == i.y) {
+      count += 1;
+    }
+  }
+  return count;
 }
 
 
