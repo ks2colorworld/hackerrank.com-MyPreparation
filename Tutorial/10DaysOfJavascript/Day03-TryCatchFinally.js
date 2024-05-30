@@ -28,12 +28,31 @@ function readLine() {
  */
 function reverseString(s) {
   // online : https://www.hackerrank.com/challenges/js10-try-catch-and-finally/problem?isFullScreen=true
+  // console.log(s);
+  try {
+    const a = s.split('');
+    // console.log(a);
+    let result = '';
+    for (let i = a.length - 1; 0 <= i; i--){
+      result += a[i];
+    }
+    console.log(result);
+  } catch (error) {
+    console.log(error.message);
+    console.log(s);
+  }
 
 }
 
 
 function main() {
   const s = eval(readLine());
-
+  
   reverseString(s);
+  
+  /* for test
+  const n = eval(readLine());
+
+  reverseString(n); // error
+  //  */
 }
