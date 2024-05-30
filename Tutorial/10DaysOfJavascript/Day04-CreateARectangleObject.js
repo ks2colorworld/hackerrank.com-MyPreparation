@@ -27,7 +27,16 @@ function readLine() {
  */
 function Rectangle(a, b) {
   // online : https://www.hackerrank.com/challenges/js10-objects/problem?isFullScreen=true
-
+  this.length = a;
+  this.width = b;
+  this.perimeter = 2 * (a + b);
+  // this.area = a * b;
+  Object.defineProperty(this, 'area', {
+    // get: function () {
+    //   return this.length * this.width;
+    // }
+    get: ()=> this.length*this.width
+  })
 }
 
 
