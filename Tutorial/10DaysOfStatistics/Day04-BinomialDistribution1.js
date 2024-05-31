@@ -6,9 +6,16 @@ function processData(input) {
   // console.log(a);
   const p = a[0] / (a[0] + a[1]);
   // console.log(p);
-  const b = calculateProbability(p);
+  // const b = calculateProbability(p);
   // console.log(Math.round(b*1000)/1000);
-  console.log(b.toFixed(3));
+  // console.log(b.toFixed(3));
+
+  const n = 6 // 자녀 수 
+  const k = 3 // 최소 남아수
+  // const p = 1.09 / (1 + 1.09) // 남아 출생비율
+
+  const r = cal(k, n, p);
+  console.log(r.toFixed(3));
 }
 
 process.stdin.resume();
@@ -26,7 +33,7 @@ process.stdin.on("end", function () {
 ❯ echo "1.09 1" | node Day04-BinomialDistribution1.js
  */
 
-
+/* 
 // 이항 계수를 계산하는 함수
 function binomialCoefficient(n, k) {
   if (k === 0 || k === n) {
@@ -60,3 +67,54 @@ function calculateProbability(p) {
   }
   return probability;
 }
+//  */
+
+// /*  -----------------------------------
+
+// 조합 함수 : n개의 항목에서 순서없이 r개가 나올 경우의 수 
+function combination(n, r) {
+  // r <= n
+  const numerator = permutation(n, r);// factorial(n, n+1 - r);
+  const denominator = factorial(r);
+  return numerator / denominator;
+}
+
+// 순열 함수 : n개의 항목에서 순서대로 r개가 나올 경우의 수
+function permutation(n, r) {
+  // 0 < r <= n
+  if (!(0 < r && r <= n)) {
+    return null;
+  }
+  const numerator = factorial(n, n + 1 - r);
+  return numerator;
+}
+
+function factorial(n, end = 1) {
+  let result = 1;
+  for (let i = n; end <= i; i--) {
+    result *= i;
+  }
+  return result;
+}
+
+function F(n, r, p, q) {
+  const c = combination(n, r) * Math.pow(p, r) * Math.pow(q, n - r);
+  return c;
+}
+
+function cal(k, n, p) {
+  const q = 1 - p;
+  let prob = 0;
+  for (let kk = k; kk <= n; kk++){
+    prob += F(n, kk, p, q);
+  }
+  return prob;
+}
+
+// n = 6 // 자녀 수 
+// k = 3 // 최소 남아수
+// p = 1.09 / (1 + 1.09) // 남아 출생비율
+
+// r = cal(k, n, p);
+// console.log(r.toFixed(3));
+//  */
