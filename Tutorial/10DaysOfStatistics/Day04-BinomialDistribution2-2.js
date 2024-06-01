@@ -21,17 +21,23 @@ function comb(n, r) {
 }
 
 let p = 0.12;
-let q = 1 - p;
-let case1 = 0;
-let case2 = 0;
+// let q = 1 - p;
+// let case1 = 0;
+// let case2 = 0;
 
-for (let k = 0; k < 3; k++) {
-  case1 += comb(10, k) * (Math.pow(p, k)) * (Math.pow(q, 10 - k));
-}
+// for (let k = 0; k < 3; k++) {
+//   case1 += comb(10, k) * (Math.pow(p, k)) * (Math.pow(q, 10 - k));
+// }
 
-for (let k = 2; k < 11; k++) {
-  case2 += comb(10, k) * (Math.pow(p, k)) * (Math.pow(q, 10 - k));
-}
+// for (let k = 2; k < 11; k++) {
+//   case2 += comb(10, k) * (Math.pow(p, k)) * (Math.pow(q, 10 - k));
+// }
 
-console.log(case1.toFixed(3));
-console.log(case2.toFixed(3));
+// console.log(case1.toFixed(3));
+// console.log(case2.toFixed(3));
+
+const case3 = Math.pow(2/3,4)*1/3;
+console.log(case3.toFixed(3));
+console.log(16/243);
+
+// 0.066
