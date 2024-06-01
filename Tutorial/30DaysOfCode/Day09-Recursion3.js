@@ -32,6 +32,7 @@ function readLine() {
 function factorial(n) {
   // Write your code here
   // online : https://www.hackerrank.com/challenges/30-recursion/problem?isFullScreen=true
+  return n === 0 ? 1 : n * factorial(n - 1);
 }
 
 function main() {
