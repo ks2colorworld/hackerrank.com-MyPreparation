@@ -33,6 +33,9 @@ function main() {
     s.push(remainder);
   }
   // console.log(s.reverse());
+  // console.log(n.toString(2)); // 간단하게 2진수로 변환 표기하는 방법
+  // const s = n.toString(2).split('').map(v=>parseInt(v));
+  // console.log(s);
   let max1Count = 0;
   let count1 = 0;
   for (const v of s) {
