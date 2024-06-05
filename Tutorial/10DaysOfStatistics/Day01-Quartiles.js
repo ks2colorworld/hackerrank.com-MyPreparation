@@ -80,5 +80,5 @@ function main() {
 /* 
 note : 
 로컬에서 코드 실행 방법
-> OUTPUT_PATH=output.txt node Day1-Quartiles.js < Day1-Quartiles-input.txt
+> OUTPUT_PATH=output.txt node Day01-Quartiles.js < Day01-Quartiles-input.txt
  */

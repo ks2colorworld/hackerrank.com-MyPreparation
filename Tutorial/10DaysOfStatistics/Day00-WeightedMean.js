@@ -55,7 +55,7 @@ function main() {
 
 /* 
 note : 
-테스트 실행 명령어 : node Day0-WeightedMean.js < Day0-input-WeightedMean.txt  
+테스트 실행 명령어 : node Day00-WeightedMean.js < Day00-input-WeightedMean.txt  
 .toFixed(1) : 소숫점으로 표현되는 데이터 형식의 소숫점 표시 갯수(1개)를 제한하는 문법 
 
 for of : 데이터 구조내 반복문 동작시 value를 다룰 때
