@@ -22,4 +22,24 @@ function readLine(){ // : string {
 function main() {
   // Enter your code here
   // online : https://www.hackerrank.com/challenges/30-scope/problem?isFullScreen=true
+  const n = readLine();
+  const arr = readLine().trim().split(/[ \n]+/).map(v => { return parseInt(v.trim()) });
+  // const arr = readLine().trim().split(new RegExp('[ \n]+')).map(v => { return parseInt(v.trim()) });
+  // console.log(n, arr);
+  const max = Math.max(...arr);
+  // console.log(max);
+  const min = Math.min(...arr);
+  // console.log(min);
+  console.log(max - min);
+  /* 
+  // 1<= arr[i] <= 100
+  let max2 = 0;
+  let min2 = 101;
+  for (let i = 0; i < n; i++) {
+    const e = arr[i];
+    max2 = max2 < e ? e : max2;
+    min2 = e < min2 ? e : min2;
+  }
+  console.log(max2 - min2);
+   */
 }
