@@ -30,7 +30,13 @@ function readLine() {
  */
 // online : https://www.hackerrank.com/challenges/js10-arrows/problem?isFullScreen=true
 function modifyArray(nums) {
-
+  // console.log(nums);
+  const f = (a, b) => { return a * b };
+  const nums2 = nums.map(v => {
+    const a = v % 2 === 0 ? 2 : 3;
+    return f(a, v)
+  });
+  return nums2;
 }
 
 
