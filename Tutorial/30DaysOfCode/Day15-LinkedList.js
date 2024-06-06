@@ -25,6 +25,23 @@ function Solution() {
   this.insert = function (head, data) {
     //complete this method
     // online : https://www.hackerrank.com/challenges/30-linked-list/problem?isFullScreen=true
+    if (!head) {
+      head = new Node(data);
+      return head;
+    }
+    var nextNode = new Node(data);
+    var parentNode = head;
+    // var childNode = parentNode.next;
+    while (true) {
+      if (!parentNode.next) {
+        break;
+      }
+      parentNode = parentNode.next;
+      // parentNode = childNode;
+      // childNode = parentNode.next;
+    }
+    parentNode.next = nextNode;
+    return head;
   };
 
   this.display = function (head) {
