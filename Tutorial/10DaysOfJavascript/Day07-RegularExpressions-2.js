@@ -40,7 +40,15 @@ function regexVar() {
 
 function main() {
   const re = regexVar();
-  const s = readLine();
+  // const s = readLine();
 
-  console.log(!!s.match(re));
+  // console.log(!!s.match(re)); // if s.match(re) = null (Falsy Data), !s.match(re) = true. so, !!s.match(re) = false
+  
+  
+  let s = readLine();
+  while (s) {
+    console.log(!!s.match(re));
+    // console.log(s, !!s.match(re), !s.match(re), 'match:',s.match(re),'test:', re.test(s));
+    s = readLine();
+  }
 }
