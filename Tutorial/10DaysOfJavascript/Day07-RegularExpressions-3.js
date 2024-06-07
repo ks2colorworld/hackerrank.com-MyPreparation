@@ -29,7 +29,10 @@ function regexVar() {
    */
   // online : https://www.hackerrank.com/challenges/js10-regexp-3/problem?isFullScreen=true
 
+  const re = /\d+/g;
 
+  // const r = '\\d+'
+  // const re = new RegExp(r, 'g');
   /*
    * Do not remove the return statement
    */
