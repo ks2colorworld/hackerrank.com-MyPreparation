@@ -30,7 +30,7 @@ function regexVar() {
    */
   // online : https://www.hackerrank.com/challenges/js10-regexp-2/problem?isFullScreen=true
 
-
+  const re = new RegExp(/^(Mr\.|Mrs\.|Ms\.|Dr\.|Er\.)[a-zA-Z]*$/);
   /*
    * Do not remove the return statement
    */
