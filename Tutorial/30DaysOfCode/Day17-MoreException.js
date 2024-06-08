@@ -19,6 +19,16 @@ function readLine() {
 
 //Write your code here
 // online : https://www.hackerrank.com/challenges/30-more-exceptions/problem?isFullScreen=true
+class Calculator{
+  power(n, p) {
+    if (n < 0 || p < 0) {
+      // console.log(n,p);
+      throw 'n and p should be non-negative';
+      // throw new Error('n and p should be non-negative');
+    }
+    return Math.pow(n, p);
+  }
+}
 
 function main() {
   var myCalculator = new Calculator();
