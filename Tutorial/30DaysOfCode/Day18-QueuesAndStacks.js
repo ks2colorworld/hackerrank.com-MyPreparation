@@ -20,7 +20,21 @@ function readLine() {
 function Solution() {
   //Write your code here
   // online : https://www.hackerrank.com/challenges/30-queues-stacks/problem?isFullScreen=true
-  
+  this.queue = []; // push - shift - front(queue[0])
+  this.stack = []; // push - pop - peek(stack[length-1])
+
+  this.pushCharacter = function (char) {
+    this.stack.push(char);
+  };
+  this.popCharacter = function () {
+    return this.stack.pop();
+  };
+  this.enqueueCharacter = function (char) {
+    this.queue.push(char);
+  };
+  this.dequeueCharacter = function () {
+    return this.queue.shift();
+  };
 }
 
 function main() {
