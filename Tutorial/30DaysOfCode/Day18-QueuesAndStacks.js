@@ -40,6 +40,16 @@ function Solution() {
 function main() {
   // read the string s
   var s = readLine();
+  while (true) {
+    checkPalindrome(s);
+    s = readLine();
+    if (!s) {
+      break;
+    }
+  }
+  
+}
+function checkPalindrome(s) {
   var len = s.length;
   // create the Solution class object p
   var obj = new Solution();
@@ -48,13 +58,12 @@ function main() {
     obj.pushCharacter(s.charAt(i));
     obj.enqueueCharacter(s.charAt(i));
   }
-
+  console.log('stack:', obj.stack, 'queue:', obj.queue);
   var isPalindrome = true;
   /*
   pop the top character from stack
   dequeue the first character from queue
   compare both the characters*/
-
   for (var i = 0; i < len / 2; i++) {
     if (obj.popCharacter() != obj.dequeueCharacter()) {
       isPalindrome = false;
@@ -62,9 +71,9 @@ function main() {
     }
   }
   //finally print whether string s is palindrome or not
-
   if (isPalindrome)
     console.log("The word, " + s + ", is a palindrome.");
+
   else
     console.log("The word, " + s + ", is not a palindrome.");
 }
