@@ -8,7 +8,15 @@ public class Calculator : AdvancedArithmetic
   public int divisorSum(int n)
   {
     // online : https://www.hackerrank.com/challenges/30-interfaces/problem?isFullScreen=true
-    return 0;
+    // List<int> d = new List<int>();
+    int sum = 0;
+    for (int i =1; i <= n; i++){
+      if (n%i ==0){
+        // d.Add(i);
+        sum += i;
+      }
+    }
+    return sum;
   }
 }
 
@@ -26,9 +34,4 @@ class Solution{
 /* 1
 ❯ csc Day19-Interfaces.cs 
 ❯ mono Day19-Interfaces.exe < Day19-Interfaces-input.txt 
-*/
-
-/* 2 
-❯ dotnet tool install -g dotnet-script
-❯ dotnet script Day19-Interfaces.cs < Day19-Interfaces-input.txt
 */
