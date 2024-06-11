@@ -32,7 +32,22 @@ function readLine() {
 function diagonalDifference(arr) {
   // Write your code here
   // online : https://www.hackerrank.com/challenges/one-week-preparation-kit-diagonal-difference/problem?isFullScreen=true
-
+  // console.log(arr);
+  const n = arr.length;
+  const l = n - 1;
+  let sum1 = 0;
+  let sum2 = 0;
+  for (let i = 0; i < n; i++){
+    const iArr = arr[i];
+    // console.log(iArr[i], iArr[l - i]);
+    sum1 += iArr[i];
+    sum2 += iArr[l - i];
+  }
+  // console.log(sum1, sum2);
+  const r = Math.abs(sum1 - sum2);
+  // const r = sum1 > sum2 ? sum1 - sum2 : sum2 - sum1;
+  // console.log(r);
+  return r;
 }
 
 function main() {
