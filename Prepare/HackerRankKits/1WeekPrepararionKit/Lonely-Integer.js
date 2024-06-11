@@ -32,7 +32,25 @@ function readLine() {
 function lonelyinteger(a) {
   // Write your code here
   // online : https://www.hackerrank.com/challenges/one-week-preparation-kit-lonely-integer/problem?isFullScreen=true
-
+  const iCount = {};
+  for (let i = 0; i < a.length; i++){
+    const num = a[i];
+    if (!iCount[num.toString()]) {
+      iCount[num.toString()] = 1;
+      continue;
+    }
+    iCount[num.toString()] += 1;
+  }
+  // console.log(iCount);
+  let result = 0;
+  for (const key in iCount) {
+    if (iCount[key] == 1) {
+      // console.log(key);
+      result = key;
+      break;
+    }
+  }
+  return result;
 }
 
 function main() {
