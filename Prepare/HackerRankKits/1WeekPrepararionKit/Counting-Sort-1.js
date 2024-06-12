@@ -32,7 +32,11 @@ function readLine() {
 function countingSort(arr) {
   // Write your code here
   // online : https://www.hackerrank.com/challenges/one-week-preparation-kit-countingsort1/problem?isFullScreen=true
-  
+  const countArr = new Array(100).fill(0);
+  for (const num of arr) {
+    countArr[num]++;
+  }
+  return countArr;
 }
 
 function main() {
