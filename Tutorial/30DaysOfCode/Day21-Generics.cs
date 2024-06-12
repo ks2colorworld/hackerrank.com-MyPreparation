@@ -10,6 +10,12 @@ class Printer
 	**/
   // Write your code here
   // online : https://www.hackerrank.com/challenges/30-generics/problem?isFullScreen=true
+  static void PrintArray<T>(T[] array){
+    foreach (T item in array)
+    {
+      Console.WriteLine(item);
+    }
+  }
 
   static void Main(string[] args)
 	{
