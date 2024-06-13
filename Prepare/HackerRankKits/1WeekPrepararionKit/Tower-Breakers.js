@@ -56,3 +56,7 @@ function main() {
 
   ws.end();
 }
+
+/* 
+OUTPUT_PATH=Tower-Breakers-output.txt node Tower-Breakers.js < Tower-Breakers-input.txt
+ */
