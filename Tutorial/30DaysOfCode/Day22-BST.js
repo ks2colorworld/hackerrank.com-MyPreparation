@@ -36,6 +36,20 @@ function BinarySearchTree() {
 
     // Add your code here
     // online : https://www.hackerrank.com/challenges/30-binary-search-trees/problem?isFullScreen=true
+    if (!root) {
+      return -1;
+    }
+    return 1 + Math.max(this.getHeight(root.left), this.getHeight(root.right));
+    // if (!root) {
+    //   return 0;
+    // }
+    // const left = root.left;
+    // const right = root.right;
+    // const leftHeight = this.getHeight(root.left);
+    // const rightHeight = this.getHeight(root.right);
+    // const childHeight = Math.max(leftHeight, rightHeight);
+    // // return childHeight + 1;
+    // return !!left || !!right ? childHeight+1:0;
 
   }; // End of function getHeight
 }; // End of function BinarySearchTree
