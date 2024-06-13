@@ -24,4 +24,4 @@ for cs in range (test_cases):
     findZigZagSequence(a, n)
 
 
-
+# online : https://www.hackerrank.com/challenges/one-week-preparation-kit-zig-zag-sequence/problem?isFullScreen=true
