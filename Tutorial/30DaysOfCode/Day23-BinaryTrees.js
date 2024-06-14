@@ -37,7 +37,26 @@ function BinarySearchTree() {
     // Add your code here
     // To print values separated by spaces use process.stdout.write(someValue + ' ')
     // online : https://www.hackerrank.com/challenges/30-binary-trees/problem?isFullScreen=true
-
+    // console.log(root);
+    const q = [root];
+    // console.log(q);
+    while (0 < q.length) {
+      const n = q.shift();
+      if (n) {
+        // console.log(n.data);
+        process.stdout.write(n.data+' ');
+        q.push(n.left)
+        q.push(n.right)
+      }
+    }
+    // if (!root) {
+    //   return '';
+    // }
+    // const left = root.left;
+    // const right = root.right;
+    // console.log(root.data, this.levelOrder(left), this.levelOrder(right));
+    // // console.log(root.data, root.left.data, root.right.data);
+    // return left.data+ ' '+right.data+ ' ';
   }; // End of function levelOrder
 }; // End of function BinarySearchTree
 
@@ -62,3 +81,7 @@ process.stdin.on('end', function () {
 
   tree.levelOrder(root);
 });
+
+/* 
+node Day23-BinaryTrees.js < Day23-BinaryTrees-input.txt
+ */
